@@ -91,6 +91,15 @@ Partial Class Form1
         Me.CommandArgs = New System.Windows.Forms.ToolStripMenuItem()
         Me.CMDToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PowershellToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.RunPS1SCRIPTFromURLToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PSURLCOMBOBOX1 = New System.Windows.Forms.ToolStripComboBox()
+        Me.GetIPV4ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UNION = New System.Windows.Forms.Label()
+        Me.PSRunToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.txtOutput = New System.Windows.Forms.ToolStripTextBox()
+        Me.OpenPS1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuPanel.SuspendLayout()
         Me.MenuBox.SuspendLayout()
         CType(Me.OpenShellBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -109,6 +118,8 @@ Partial Class Form1
         CType(Me.BackIMG, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CloseMenuBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuPanel
@@ -132,6 +143,8 @@ Partial Class Form1
         Me.MenuBox.BackColor = System.Drawing.Color.Transparent
         Me.MenuBox.BackgroundImage = Global.NKLSoft_OS1._0.My.Resources.Resources.autoroute_ville_moderne_dans_lampadaires_lumiere_illustration_vectorielle_neon_dessin_anime_33099_1403_1_
         Me.MenuBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MenuBox.Controls.Add(Me.PictureBox3)
+        Me.MenuBox.Controls.Add(Me.PictureBox5)
         Me.MenuBox.Controls.Add(Me.OpenShellBox)
         Me.MenuBox.Controls.Add(Me.CloseShellBox)
         Me.MenuBox.Controls.Add(Me.TIMELBL)
@@ -152,7 +165,7 @@ Partial Class Form1
         '
         Me.OpenShellBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.OpenShellBox.Image = Global.NKLSoft_OS1._0.My.Resources.Resources.terminal_icon_shell_linux_unix_1_
-        Me.OpenShellBox.Location = New System.Drawing.Point(104, 59)
+        Me.OpenShellBox.Location = New System.Drawing.Point(7, 59)
         Me.OpenShellBox.Name = "OpenShellBox"
         Me.OpenShellBox.Size = New System.Drawing.Size(91, 90)
         Me.OpenShellBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -396,6 +409,7 @@ Partial Class Form1
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.BackgroundImage = Global.NKLSoft_OS1._0.My.Resources.Resources._1_1_
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Controls.Add(Me.UNION)
         Me.Panel1.Controls.Add(Me.CloseMenuBar)
         Me.Panel1.Controls.Add(Me.DATELBL)
         Me.Panel1.Controls.Add(Me.TIMELBL2)
@@ -484,6 +498,7 @@ Partial Class Form1
         'BackIMG
         '
         Me.BackIMG.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuItem
+        Me.BackIMG.BackColor = System.Drawing.Color.Transparent
         Me.BackIMG.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.BackIMG.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BackIMG.Image = Global.NKLSoft_OS1._0.My.Resources.Resources.LeftHoarseEgret_size_restricted_1_
@@ -815,34 +830,120 @@ Partial Class Form1
         'CommandArgs
         '
         Me.CommandArgs.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CMDToolStripMenuItem, Me.PowershellToolStripMenuItem})
+        Me.CommandArgs.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CommandArgs.ForeColor = System.Drawing.Color.LimeGreen
         Me.CommandArgs.Name = "CommandArgs"
-        Me.CommandArgs.Size = New System.Drawing.Size(103, 25)
+        Me.CommandArgs.Size = New System.Drawing.Size(139, 25)
         Me.CommandArgs.Text = "Command Args"
         '
         'CMDToolStripMenuItem
         '
         Me.CMDToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CMDToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GetIPV4ToolStripMenuItem})
+        Me.CMDToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMDToolStripMenuItem.ForeColor = System.Drawing.Color.LimeGreen
         Me.CMDToolStripMenuItem.Name = "CMDToolStripMenuItem"
-        Me.CMDToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CMDToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
         Me.CMDToolStripMenuItem.Text = "CMD"
         '
         'PowershellToolStripMenuItem
         '
         Me.PowershellToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PowershellToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PSURLCOMBOBOX1, Me.RunPS1SCRIPTFromURLToolStripMenuItem, Me.PSRunToolStripMenuItem, Me.txtOutput})
+        Me.PowershellToolStripMenuItem.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PowershellToolStripMenuItem.ForeColor = System.Drawing.Color.LimeGreen
         Me.PowershellToolStripMenuItem.Name = "PowershellToolStripMenuItem"
-        Me.PowershellToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PowershellToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
         Me.PowershellToolStripMenuItem.Text = "Powershell"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox3.Image = Global.NKLSoft_OS1._0.My.Resources.Resources.terminal_icon_shell_linux_unix_1_
+        Me.PictureBox3.Location = New System.Drawing.Point(105, 155)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(91, 90)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 8
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox5.Image = Global.NKLSoft_OS1._0.My.Resources.Resources.terminal_icon_shell_linux_unix_1_
+        Me.PictureBox5.Location = New System.Drawing.Point(8, 155)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(91, 90)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 7
+        Me.PictureBox5.TabStop = False
+        '
+        'RunPS1SCRIPTFromURLToolStripMenuItem
+        '
+        Me.RunPS1SCRIPTFromURLToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RunPS1SCRIPTFromURLToolStripMenuItem.ForeColor = System.Drawing.Color.LimeGreen
+        Me.RunPS1SCRIPTFromURLToolStripMenuItem.Name = "RunPS1SCRIPTFromURLToolStripMenuItem"
+        Me.RunPS1SCRIPTFromURLToolStripMenuItem.Size = New System.Drawing.Size(276, 26)
+        Me.RunPS1SCRIPTFromURLToolStripMenuItem.Text = "Run PS1 SCRIPT From URL"
+        '
+        'PSURLCOMBOBOX1
+        '
+        Me.PSURLCOMBOBOX1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PSURLCOMBOBOX1.ForeColor = System.Drawing.Color.Gold
+        Me.PSURLCOMBOBOX1.Name = "PSURLCOMBOBOX1"
+        Me.PSURLCOMBOBOX1.Size = New System.Drawing.Size(121, 23)
+        '
+        'GetIPV4ToolStripMenuItem
+        '
+        Me.GetIPV4ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GetIPV4ToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GetIPV4ToolStripMenuItem.Name = "GetIPV4ToolStripMenuItem"
+        Me.GetIPV4ToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.GetIPV4ToolStripMenuItem.Text = "Get IPV4"
+        '
+        'UNION
+        '
+        Me.UNION.AutoSize = True
+        Me.UNION.BackColor = System.Drawing.Color.Transparent
+        Me.UNION.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UNION.ForeColor = System.Drawing.Color.Yellow
+        Me.UNION.Location = New System.Drawing.Point(825, 30)
+        Me.UNION.Name = "UNION"
+        Me.UNION.Size = New System.Drawing.Size(16, 20)
+        Me.UNION.TabIndex = 5
+        Me.UNION.Text = """"
+        Me.UNION.Visible = False
+        '
+        'PSRunToolStripMenuItem
+        '
+        Me.PSRunToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PSRunToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenPS1ToolStripMenuItem})
+        Me.PSRunToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PSRunToolStripMenuItem.Name = "PSRunToolStripMenuItem"
+        Me.PSRunToolStripMenuItem.Size = New System.Drawing.Size(276, 26)
+        Me.PSRunToolStripMenuItem.Text = "PSRun"
+        '
+        'txtOutput
+        '
+        Me.txtOutput.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.txtOutput.Name = "txtOutput"
+        Me.txtOutput.Size = New System.Drawing.Size(100, 23)
+        '
+        'OpenPS1ToolStripMenuItem
+        '
+        Me.OpenPS1ToolStripMenuItem.Name = "OpenPS1ToolStripMenuItem"
+        Me.OpenPS1ToolStripMenuItem.Size = New System.Drawing.Size(180, 26)
+        Me.OpenPS1ToolStripMenuItem.Text = "OpenPS1"
         '
         'Form1
         '
         Me.AllowDrop = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.Maroon
+        Me.BackgroundImage = Global.NKLSoft_OS1._0.My.Resources.Resources.LeftHoarseEgret_size_restricted_1_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1301, 693)
         Me.ControlBox = False
@@ -853,10 +954,8 @@ Partial Class Form1
         Me.Controls.Add(Me.BackIMG)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form1"
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
-        Me.TopMost = True
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuPanel.ResumeLayout(False)
         Me.MenuBox.ResumeLayout(False)
@@ -880,6 +979,8 @@ Partial Class Form1
         CType(Me.CloseMenuBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -952,4 +1053,13 @@ Partial Class Form1
     Friend WithEvents RechercherToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents toolStripSeparator5 As ToolStripSeparator
     Friend WithEvents ÀproposdeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents RunPS1SCRIPTFromURLToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PSURLCOMBOBOX1 As ToolStripComboBox
+    Friend WithEvents GetIPV4ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UNION As Label
+    Friend WithEvents PSRunToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents txtOutput As ToolStripTextBox
+    Friend WithEvents OpenPS1ToolStripMenuItem As ToolStripMenuItem
 End Class

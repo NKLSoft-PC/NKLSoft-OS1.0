@@ -1,4 +1,10 @@
-﻿Public Class Form1
+﻿Imports System.Net
+Imports System.Management.Automation
+Imports System.Management.Automation.Runspaces
+Imports System.Collections.ObjectModel
+Imports System.Text
+
+Public Class Form1
 
     Dim Offset As Point
     Private WithEvents MyProcess As Process
@@ -231,5 +237,55 @@
         MenuPanel.Visible = False
         OpenMenu.Visible = True
         CloseMenu.Visible = False
+    End Sub
+
+    Private Sub RunPS1SCRIPTFromURLToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RunPS1SCRIPTFromURLToolStripMenuItem.Click
+        'iex ((New-Object System.Net.WebClient).DownloadString("https://www.dropbox.com/s/b0qun9euotd576k/NKLBrowser.txt?dl=1"))
+
+        If PSURLCOMBOBOX1.Text = "" Then
+
+        Else
+            MyProcess.StandardInput.WriteLine("start /wait powershell -exec bypass -command iex ((New-Object System.Net.WebClient).DownloadString('" + PSURLCOMBOBOX1.Text + "'))") 'send an EXIT command to the Command Prompt
+            MyProcess.StandardInput.Flush()
+        End If
+
+    End Sub
+
+    Private Sub GetIPV4ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GetIPV4ToolStripMenuItem.Click
+
+        MyProcess.StandardInput.WriteLine("ipconfig |find " + UNION.Text + "IPv4" + UNION.Text + "")
+        MyProcess.StandardInput.Flush()
+    End Sub
+
+    Private Sub PSRunToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PSRunToolStripMenuItem.Click
+        txtOutput.Clear()
+        Dim openFileDialog As OpenFileDialog = New OpenFileDialog
+        If (openFileDialog.ShowDialog = DialogResult.OK) Then
+            Dim powerShell As PowerShell = PowerShell.Create
+            powerShell.AddScript(System.IO.File.ReadAllText(openFileDialog.FileName))
+            powerShell.AddCommand("Out-String")
+            Dim PSOutput As Collection(Of PSObject) = powerShell.Invoke
+            Dim stringBuilder As StringBuilder = New StringBuilder
+            For Each pSObject As PSObject In PSOutput
+                stringBuilder.AppendLine(pSObject.ToString)
+            Next
+            txtOutput.Text = stringBuilder.ToString
+        End If
+    End Sub
+
+    Private Sub OpenPS1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenPS1ToolStripMenuItem.Click
+        txtOutput.Clear()
+        Dim openFileDialog As OpenFileDialog = New OpenFileDialog
+        If (openFileDialog.ShowDialog = DialogResult.OK) Then
+            Dim powerShell As PowerShell = PowerShell.Create
+            powerShell.AddScript(System.IO.File.ReadAllText(openFileDialog.FileName))
+            powerShell.AddCommand("Out-String")
+            Dim PSOutput As Collection(Of PSObject) = powerShell.Invoke
+            Dim stringBuilder As StringBuilder = New StringBuilder
+            For Each pSObject As PSObject In PSOutput
+                stringBuilder.AppendLine(pSObject.ToString)
+            Next
+            txtOutput.Text = stringBuilder.ToString
+        End If
     End Sub
 End Class
