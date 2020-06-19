@@ -1,0 +1,96 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NKLSoft-OS1.0
+</name>
+</assembly>
+<members>
+<member name="T:NKLSoft_OS1._0.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources._1_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources._1_2_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources._1da4cd1771b784d6829729fb56ae9b88_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources._1NKLSoft">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources._222fc65ea7720f5aff83cfaff6e3567f_large_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources._70ebbf63965bbd6b062628abbca4e0e5_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.autoroute_ville_moderne_dans_lampadaires_lumiere_illustration_vectorielle_neon_dessin_anime_33099_1403_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.caricature_rue_nuit_moderne_metropole_33099_1469_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.caricature_rue_ville_nuit_vide_1441_3171_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.ClassicEducatedFoxhound_max_1mb_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.images_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.LeftHoarseEgret_size_restricted_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.NKLSoft">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:NKLSoft_OS1._0.My.Resources.Resources.terminal_icon_shell_linux_unix_1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>

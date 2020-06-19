@@ -1,0 +1,12 @@
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\bin\Debug\NKLSoft-OS1.0.exe.config
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\bin\Debug\NKLSoft-OS1.0.exe
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\bin\Debug\NKLSoft-OS1.0.pdb
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\bin\Debug\NKLSoft-OS1.0.xml
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft-OS1.0.vbprojAssemblyReference.cache
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft_OS1._0.Form1.resources
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft_OS1._0.Resources.resources
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft-OS1.0.vbproj.GenerateResource.cache
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft-OS1.0.vbproj.CoreCompileInputs.cache
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft-OS1.0.exe
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft-OS1.0.xml
+C:\Users\nklso\source\repos\NKLSoft-OS1.0\NKLSoft-OS1.0\obj\Debug\NKLSoft-OS1.0.pdb

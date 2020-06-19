@@ -14,6 +14,21 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -118,6 +133,60 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftHoarseEgret-size_restricted[1].gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NKLSoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1NKLSoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caricature-rue-ville-nuit-vide_1441-3171[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caricature-rue-nuit-moderne-metropole_33099-1469[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autoroute-ville-moderne-dans-lampadaires-lumiere-illustration-vectorielle-neon-dessin-anime_33099-1403[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\222fc65ea7720f5aff83cfaff6e3567f_large[1].gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.2[1].gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1da4cd1771b784d6829729fb56ae9b88[1].gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassicEducatedFoxhound-max-1mb[1].gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70ebbf63965bbd6b062628abbca4e0e5[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminal-icon-shell-linux-unix[1].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
